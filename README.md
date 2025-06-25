@@ -39,3 +39,13 @@ To https://github.com/gyeongjuhs2025/UIQuiz.git
 branch 'main' set up to track 'origin/main'.
 
 ```
+5. Google Classroom 공유 방법
+GitHub 저장소에 접속
+
+index.html 파일 우클릭 → "Raw" 클릭 → URL 복사
+
+[https://htmlpreview.github.io/](HTML Preview 접속)
+
+복사한 URL 붙여넣기
+
+생성된 링크를 구글 클래스룸 과제에 첨부
