@@ -6,7 +6,22 @@
 자바스크립트 채점 시스템 + 점수 피드백 + VSCode + GitHub 업로드 절차
 
 1. VSCode 프로젝트 폴더 생성 : index.html, script.js 생성 후 위 코드 붙여넣기
-2. Git 초기화 및 GitHub 업로드
+2. Git 초기화 및 GitHub 업로드 절차
+
+# 1) GitHub에 'UIQuiz' 저장소 생성
+# 2) 로컬 Git 초기화 및 첫 커밋
+git init  # "이제부터 이 폴더 안의 파일들을 버전 관리할게" 라고 Git에게 알려주는 거예요.
+git add . # 지금까지 만든 모든 파일을 Git에게 "이걸 저장할 거야!" 실제 저장은 아직 안 되고 준비만 하는 단계예요.
+git commit -m "first commit" # 준비한 파일들을 실제로 저장하고, "메모" 도 남기는 명령어예요.
+
+# 3) 원격 저장소 추가 : 인터넷에 있는 폴더(저장소)가 그대로 내 컴퓨터에 생겨요! 즉, GitHub -> 즉, 내 컴퓨터로 복사 해와라!
+git remote add origin https://ghp_토큰@github.com/사용자명/UIQuiz.git 
+
+# 4) 푸시 : 내 컴퓨터에서 만든 걸 GitHub에 올려줘!, 마치 과제를 선생님한테 제출하는 것처럼, 코드를 GitHub에 제출하는 명령어예요.내 컴퓨터 -> GitHub에 올려줘!
+git push -u origin main
+
+이렇게 하면 내가 고친 코드가 GitHub에 올라가고,
+다른 사람도 내가 만든 코드를 볼 수 있어요!
 
 ```
 # Git Bash 또는 VSCode 터미널에서
@@ -18,6 +33,15 @@ git commit -m "응용 프로그래밍 자동 채점기 초안"
 ```
 3. Token 복사 하기 : Setting > Developer > Token > 
 4. GitHub 토큰으로 원격(origin) 연결하는 명령어 : git remote add origin https://ghp_토큰값@github.com/gyeongjuhs2025/UIQuiz.git
+5. 보안상 권장 방식 (대화형 로그인)
+
+git remote add origin https://github.com/gyeongjuhs2025/UIQuiz.git
+이후 git push 하면 GitHub가 사용자명/토큰을 물어보며,
+이때:
+
+Username: GitHub 사용자명 (예: gyeongjuhs2025)
+
+Password: Personal Access Token
 
 ```
 user@▒▒▒▒▒▒ MINGW64 ~/Desktop/UIQuiz (main)
