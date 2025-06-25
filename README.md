@@ -44,7 +44,8 @@ GitHub 저장소에 접속
 
 index.html 파일 우클릭 → "Raw" 클릭 → URL 복사
 
-[https://htmlpreview.github.io/](HTML Preview 접속)
+[https://htmlpreview.github.io/] (HTML Preview 접속)
+https://htmlpreview.github.io/
 
 복사한 URL 붙여넣기
 
