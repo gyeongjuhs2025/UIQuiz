@@ -1,5 +1,5 @@
 let problems = [];
-const scorePerQuestion = 4;
+const scorePerQuestion = 2;
 
 function createQuiz() {
   const quizDiv = document.getElementById("quiz");
